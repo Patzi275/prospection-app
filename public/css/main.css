@@ -1,0 +1,48 @@
+.sidebar-container {
+    height: 100vh;
+    position: fixed;
+    left: -100%;
+    z-index: 5;
+}
+
+.sidebar-container--open {
+    left: 0;
+}
+
+.sidebar {
+    min-width: 17.5rem;
+}
+
+.pro-form form {
+    margin: auto;
+}
+
+.pro-form h3 {
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 786px) {
+    .sidebar-container {
+        position: static;
+        min-width: 17.5rem;
+    }
+
+    .sidebar {
+        position: fixed;
+        max-width: fit-content;
+    }
+
+    .pro-form {
+        margin-left: 1.5rem;
+    }
+
+    .pro-form form {
+        margin-left: 0;
+    }
+
+    .pro-form h3 {
+        text-align: left;
+    }
+}
